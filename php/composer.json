@@ -1,0 +1,25 @@
+{
+    "name": "yuri/php",
+    "description": "Desafio proposto pela softexpert",
+    "authors": [
+        {
+            "name": "Yuri Martins",
+            "email": "yurimartins3705@gmail.com"
+        }
+    ],
+    "config": {
+        "platform-check": false
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Manager\\": "src/"
+        }
+    },
+    "require": {
+        "pecee/simple-router": "dev-master",
+        "twig/twig": "~1.0",
+        "illuminate/database": "8.x-dev",
+        "filp/whoops": "^2.14"
+    }
+}
