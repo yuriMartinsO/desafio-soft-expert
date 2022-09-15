@@ -2,6 +2,7 @@
 
 require "bootstrap.php";
 
+use Manager\Model\Product;
 use Pecee\SimpleRouter\SimpleRouter;
 use Pecee\Http\Request;
 use Pecee\Http\Response;
@@ -14,9 +15,20 @@ function response(): Response
     return SimpleRouter::response();
 }
 
-SimpleRouter::get('/produto/{id}', function($id = 0) {
-    return "id do trem: {$id}";
+SimpleRouter::post('/product', '');
+
+SimpleRouter::get('/not-found', function() {
+    return 'Route not found';
 });
+
+SimpleRouter::get('/migration', function() {
+    Product::all();
+});
+
+SimpleRouter::get('/forbidden', function() {
+    return 'Forbidden!';
+});
+
 
 /* SWITCH FOR ERROR */
 SimpleRouter::error(function(Request $request, \Exception $exception) {
