@@ -31,6 +31,16 @@ class ProductValidator
     }
 
     /**
+     * Validate the Product type
+     */
+    public function productHasType()
+    {
+        if (!$this->product->type_id) {
+            $this->validatorResponse->addError('ProductType', "Tipo do produto não pode ser nulo!");
+        }
+    }
+
+    /**
      * Validate if product is valid
      *
      * @return ValidatorResponse
@@ -38,6 +48,7 @@ class ProductValidator
     public function validate(): ValidatorResponse
     {
         $this->productNameIsValid();
+        $this->productHasType();
 
         return $this->validatorResponse;
     }
