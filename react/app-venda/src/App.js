@@ -6,8 +6,7 @@ import Header from './components/Header';
 
 function App() {
     return (
-        <div>
-            <BrowserRouter>
+        <BrowserRouter>
             <Routes>
                 <Route>
                     <Route path="/" element={<Header />}/>
@@ -16,7 +15,6 @@ function App() {
                 </Route>
             </Routes>
         </BrowserRouter>
-        </div>
     );
 }
 
