@@ -26,7 +26,7 @@ class TypeValidator
     public function typeNameIsValid()
     {
         if (!$this->type->name) {
-            $this->validatorResponse->addError('TypeName', "Nome do tipo não pode ser nulo!");
+            $this->validatorResponse->addError("Nome do tipo não pode ser nulo!");
         }
     }
 

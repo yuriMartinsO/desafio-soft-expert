@@ -26,7 +26,7 @@ class ProductValidator
     public function productNameIsValid()
     {
         if (!$this->product->name) {
-            $this->validatorResponse->addError('ProductName', "Nome do produto não pode ser nulo!");
+            $this->validatorResponse->addError("Nome do produto não pode ser nulo!");
         }
     }
 
@@ -36,7 +36,7 @@ class ProductValidator
     public function productHasType()
     {
         if (!$this->product->type_id) {
-            $this->validatorResponse->addError('ProductType', "Tipo do produto não pode ser nulo!");
+            $this->validatorResponse->addError("Tipo do produto não pode ser nulo!");
         }
     }
 

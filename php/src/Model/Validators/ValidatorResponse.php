@@ -31,9 +31,9 @@ class ValidatorResponse
      * @param string $value
      * @return self
      */
-    public function addError(string $key, string $value): self
+    public function addError(string $value): self
     {
-        $this->errors[$key] = $value;
+        $this->errors[] = $value;
         return $this;
     }
 }
