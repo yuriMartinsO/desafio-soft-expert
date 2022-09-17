@@ -1,0 +1,48 @@
+form {
+    padding-top: 164px;
+}
+.form-page label {
+    margin-right: 46px;
+    color: white;
+    font-size: 23px;
+    margin-bottom: 27px;
+}
+
+.form-page input {
+    border-radius: 15px;
+    border: 0px;
+    padding: 7px;
+}
+
+.form-page .button button {
+    padding: 7px;
+    width: 90px;
+    border-radius: 7px;
+    color: white;
+    background-color: #4795da;
+    margin-top: 7px;
+}
+body {
+    overflow-x: hidden;
+}
+.table-container {
+    margin: 0px 45px 0px 45px;
+    padding: 12px;
+    background: white;
+}
+
+.inputnumber input {
+    border: 1px solid;
+    width: 92px;
+    text-align: center;
+}
+
+.button-container button {
+    width: 106px;
+    height: 39px;
+    margin-right: 55px;
+    background-color: #33c9f8;
+    color: white;
+    border: 0px;
+    border-radius: 13px;
+}
