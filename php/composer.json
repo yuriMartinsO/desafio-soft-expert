@@ -13,12 +13,16 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Manager\\": "src/"
+            "Manager\\": "src/",
+            "Tests\\": "tests/"
         }
     },
     "require": {
         "pecee/simple-router": "dev-master",
         "illuminate/database": "8.x-dev",
         "filp/whoops": "^2.14"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
     }
 }
