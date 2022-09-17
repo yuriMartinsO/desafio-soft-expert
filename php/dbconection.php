@@ -5,7 +5,7 @@ $capsule = new Capsule;
 $capsule->addConnection([
    "driver" => "pgsql",
    "host" => "localhost",
-   "database" => "softexpert",
+   "database" => "softexpert_dois",
    "username" => "postgres",
    "password" => "123"
 ]);
