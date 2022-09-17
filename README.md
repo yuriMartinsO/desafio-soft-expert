@@ -1,2 +1,4 @@
 # desafio-soft-expert
-pequeno projeto de cadastro venda
+Projeto de cadastro venda
+
+Entre em PHP/readme.md e depois em react/readme.md
