@@ -24,6 +24,7 @@ class Header extends Component {
                             <ul className="site-menu main-menu js-clone-nav ml-auto ">
                                 <li><Link to="/cadastrotipo" className="nav-link">Cadastro Tipo</Link></li>
                                 <li><Link to="/cadastroproduto" className="nav-link">Cadastro de Produto</Link></li>
+                                <li><Link to="/cadastrovenda" className="nav-link">Cadastro de Venda</Link></li>
                             </ul>
                             </nav>
                         </div>

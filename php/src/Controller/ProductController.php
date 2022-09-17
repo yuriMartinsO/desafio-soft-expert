@@ -2,8 +2,10 @@
 
 namespace Manager\Controller;
 
+use Illuminate\Database\Capsule\Manager as DB;
 use Manager\Model\RequestBuilders\ProductRequestBuilder;
 use Manager\Model\Product;
+use Manager\Model\Type;
 use Manager\Model\Validators\ProductValidator;
 
 /**
@@ -64,5 +66,31 @@ class ProductController
             'error' => false,
             'data' => $product->toArray()
         ]);
+    }
+
+    /**
+     * Search products
+     *
+     * @return string
+     */
+    public function search(): string
+    {
+        $products = DB::table('products');
+
+        if ($productName = $_GET['productName']) {
+            $productName = strtoupper($productName);
+            $products->where("name", 'ilike', "%{$productName}%");
+        }
+
+        $productsReturn = [];
+        foreach ($products->get() as $product) {
+            $type = Type::where('id', $product->type_id)->first();
+            $product->type = $type;
+
+            $productsReturn[] = $product;
+        }
+
+        http_response_code(200);
+        return (string) json_encode($productsReturn);
     }
 }

@@ -17,10 +17,9 @@ function response(): Response
 }
 
 SimpleRouter::post('/api/product', 'Manager\Controller\ProductController@create');
-SimpleRouter::get('/api/product', function() {
-    http_response_code(200);
-    return json_encode(Product::all());
-});
+SimpleRouter::get('/api/product', 'Manager\Controller\ProductController@search');
+
+SimpleRouter::post('/api/order', 'Manager\Controller\OrderController@create');
 
 SimpleRouter::post('/api/type', 'Manager\Controller\TypeController@create');
 SimpleRouter::get('/api/type', function() {

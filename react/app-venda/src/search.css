@@ -1,0 +1,31 @@
+/* search component */
+.optionSearch {
+    cursor: pointer;
+    background-color: white;
+    min-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 12px;
+    margin-top: 1px;
+    border: 1px solid;
+}
+
+.optionSearch:hover {
+    background-color: #85aaff;
+}
+
+.search-input {
+    width: 290px;
+}
+
+.search-container {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.search-container .container-options {
+    position: absolute;
+    z-index: 1000;
+}

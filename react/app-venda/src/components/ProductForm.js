@@ -22,8 +22,6 @@ class ProductForm extends Component {
     handleInputChange = (e) => {
         this.setState({
             [e.target.name]: e.target.value,
-        }, () => {
-            console.log(this.state);
         });
     }
 

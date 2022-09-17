@@ -25,3 +25,24 @@ form {
 body {
     overflow-x: hidden;
 }
+.table-container {
+    margin: 0px 45px 0px 45px;
+    padding: 12px;
+    background: white;
+}
+
+.inputnumber input {
+    border: 1px solid;
+    width: 92px;
+    text-align: center;
+}
+
+.button-container button {
+    width: 106px;
+    height: 39px;
+    margin-right: 55px;
+    background-color: #33c9f8;
+    color: white;
+    border: 0px;
+    border-radius: 13px;
+}
